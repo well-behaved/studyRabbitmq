@@ -13,10 +13,13 @@ public class Task {
 
         ConnectionFactory factory = new ConnectionFactory();
         factory.setHost("localhost");
-
-        try {
-            Connection connection = factory.newConnection();
-            Channel channel = connection.createChannel();
+        
+        /**
+         *  java7新特性，在try后面的括号中创建的资源会在try中内容执行完成后自动释放，
+         *  前提是这些资源必须实现java.lang.AutoCloseable接口。
+         */
+        try (Connection connection = factory.newConnection();
+             Channel channel = connection.createChannel()){
             //为了将消息持久化（即使mq服务器挂掉也不会丢失消息）
             boolean durable = true;
             channel.queueDeclare(QUEUE_NAME, durable, false, false, null);

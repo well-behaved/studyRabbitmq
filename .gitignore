@@ -4,3 +4,4 @@
 .project
 .setting
 .iml
+/target/classes/com/my/test/rabbit/publishsubscribe/*.class

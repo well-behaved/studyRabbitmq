@@ -1,4 +1,4 @@
-package com.my.test.rabbit.second;
+package rabbit.second;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;

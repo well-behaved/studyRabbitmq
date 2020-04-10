@@ -1,4 +1,4 @@
-package com.my.test.rabbit.publishsubscribe;
+package rabbit.publishsubscribe;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;

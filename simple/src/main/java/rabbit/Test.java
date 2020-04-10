@@ -1,9 +1,8 @@
-package com.my.test.rabbit;
+package rabbit;
 
 import java.io.UnsupportedEncodingException;
-import java.time.*;
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.Base64;
+import java.util.UUID;
 
 public class Test {
 

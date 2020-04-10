@@ -1,4 +1,4 @@
-package com.my.test.rabbit.rpc;
+package rabbit.rpc;
 
 import com.rabbitmq.client.AMQP;
 import com.rabbitmq.client.Channel;

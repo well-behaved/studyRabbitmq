@@ -1,6 +1,11 @@
-package com.my.test.rabbit.first;
+package rabbit.first;
 
-import com.rabbitmq.client.*;
+import com.rabbitmq.client.CancelCallback;
+import com.rabbitmq.client.Channel;
+import com.rabbitmq.client.Connection;
+import com.rabbitmq.client.ConnectionFactory;
+import com.rabbitmq.client.DeliverCallback;
+import com.rabbitmq.client.Delivery;
 
 import java.io.IOException;
 
@@ -23,6 +28,7 @@ public class Consumer {
 
 
         DeliverCallback deliverCallback = new DeliverCallback(){
+            @Override
             public void handle(String consumerTag, Delivery delivery) throws IOException{
                 String message = new String(delivery.getBody(), "UTF-8");
                 System.out.println(" 接收到的消息为： '" + message + "'");

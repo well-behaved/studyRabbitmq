@@ -1,6 +1,10 @@
-package com.my.test.rabbit.rpc;
+package rabbit.rpc;
 
-import com.rabbitmq.client.*;
+import com.rabbitmq.client.AMQP;
+import com.rabbitmq.client.Channel;
+import com.rabbitmq.client.Connection;
+import com.rabbitmq.client.ConnectionFactory;
+import com.rabbitmq.client.DeliverCallback;
 
 /**
  * 服务端

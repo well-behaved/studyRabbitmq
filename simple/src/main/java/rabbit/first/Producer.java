@@ -1,10 +1,8 @@
-package com.my.test.rabbit.first;
+package rabbit.first;
 
-import com.rabbitmq.client.ConnectionFactory;
-import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.Channel;
-
-import java.io.IOException;
+import com.rabbitmq.client.Connection;
+import com.rabbitmq.client.ConnectionFactory;
 
 public class Producer {
 

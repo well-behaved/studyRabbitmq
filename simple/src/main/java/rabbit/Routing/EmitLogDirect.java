@@ -1,4 +1,4 @@
-package com.my.test.rabbit.Routing;
+package rabbit.Routing;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
